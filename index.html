@@ -20,13 +20,23 @@
 			transform: scaleX(-1); /* Flip horizontally */
         }
 
-        .black-block {
+        .black-block2 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 5000px; /* Adjust width as needed */
+            height: 1000px; /* Adjust height as needed */
+            background-color: #030304;
+            z-index: 0; /* Make sure the block is above the iframe */
+        }
+		
+		.black-block {
             position: absolute;
             bottom: 0;
             left: 0;
             width: 690px; /* Adjust width as needed */
             height: 70px; /* Adjust height as needed */
-            background-color: black;
+            background-color: #030304;
             z-index: 1; /* Make sure the block is above the iframe */
         }
     </style>
@@ -269,13 +279,14 @@ the client in the service we provide them.</p>
                 </div>
             </div>
             <div class="shape-1 position-absolute bottom-0 start-50 z-1 ms-10 d-none d-md-block">
+				
                 <div class="container2">
 					<iframe src="https://my.spline.design/chips-9980b09ad8f14c8484398d8fc75c7184/" class="spline-embed">
 					</iframe>
 					<div class="black-block"></div>
 				</div>
             </div>
-			
+			<div class="black-block2"></div>
             <div class="position-absolute top-0 start-0 w-100 h-100 filter-invert" data-background="images/hero/hero-1/background.png"></div>
         </section>
 
