@@ -39,6 +39,28 @@
             background-color: #030304;
             z-index: 1; /* Make sure the block is above the iframe */
         }
+		
+		.image-container2 {
+			position: relative;
+			display: inline-block;
+		}
+
+		.hover-text {
+			visibility: hidden;
+			position: absolute;
+			top: 100%; /* Position it directly below the image */
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: black;
+			color: white;
+			padding: 5px;
+			border-radius: 3px;
+			white-space: nowrap;
+		}
+
+		.image-container2:hover .hover-text {
+			visibility: visible;
+		}
     </style>
 	
     <script src="js/color-modes.js"></script>
@@ -257,22 +279,40 @@ the client in the service we provide them.</p>
                         <p class="text-400 mt-6 mb-3">+ 8 years with professional interior design experience</p>
                         <div class="d-flex gap-3">
                             <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
-                                <img src="images/IconX1.png" alt="brand">
+								<div class="image-container2">
+									<img src="images/IconX1.png" alt="Autocad">
+									<span class="hover-text">Autocad</span>
+								</div>
                             </div>
                             <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
-                                <img src="images/IconX2.png" alt="brand">
+								<div class="image-container2">
+									<img src="images/IconX2.png" alt="Sketchup">
+									<span class="hover-text">Sketchup</span>
+								</div>
                             </div>
                             <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
-                                <img src="images/IconX3.png" alt="brand">
+								<div class="image-container2">
+									<img src="images/IconX3.png" alt="D5 Render">
+									<span class="hover-text">D5 Render</span>
+								</div>
                             </div>
                             <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
-                                <img src="images/IconX4.png" alt="brand">
+								<div class="image-container2">
+									<img src="images/IconX4.png" alt="Photoshop">
+									<span class="hover-text">Photoshop</span>
+								</div>
                             </div>
                             <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
-                                <img src="images/IconX5.png" alt="brand">
+								<div class="image-container2">
+									<img src="images/IconX5.png" alt="Illustrator">
+									<span class="hover-text">Illustrator</span>
+								</div>
                             </div>
+								<div class="image-container2">
                             <div class="brand-logo icon-xl icon-shape rounded-3 bg-900 d-none d-md-flex">
-                                <img src="images/IconX6.png" alt="brand">
+									<img src="images/IconX6.png" alt="Premiere">
+									<span class="hover-text">Premiere</span>
+								</div>
                             </div>
                         </div>
                     </div>
