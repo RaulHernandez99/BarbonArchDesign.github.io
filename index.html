@@ -6,6 +6,14 @@
 	
 	
 	<style>
+		.containerRocket {
+            position: relative;
+            width: 90%;
+            height: 700px;
+			left: 100%; /* Adjust the percentage to move it right */
+			bottom: 80%; /* Adjust the distance from the bottom */
+        }
+		
 		.container2 {
             position: relative;
             width: 100%;
@@ -26,6 +34,27 @@
             border: none;
             background: none; /* Ensure the iframe background is transparent */
 			
+        }
+	
+        .spline-embedRocket {
+			
+            width: 170%;
+            height: 800px; /* You can adjust the height as needed */
+            border: none;
+            background: none; /* Ensure the iframe background is transparent */
+			
+        }
+		
+		.black-blockRocket {
+            position: absolute;
+			top: 80%;
+			left: 0%;
+			right: 40%
+			transform: translate(-50%, -50%);
+			width: 10px; /* Adjust width as needed */
+			height: 50px; /* Adjust height as needed */
+			background-color: #272730;
+			z-index: 1; /* Make sure the block is above the iframe */
         }
 		
 		.black-block4 {
@@ -1023,12 +1052,21 @@ the client in the service we provide them.</p>
                     </div>
                 </div>
             </div>
-            <div class="shape-1 position-absolute bottom-0 start-50 z-1 ms-10 ps-10 d-none d-md-block">
-                <img class="position-relative z-1" src="images/man_1.png" alt="man">
-                <div class="position-absolute top-50 start-50 translate-middle z-0 mt-5">
-                    <img class="ribbonRotate" src="images/decorate_1.png" alt="">
-                </div>
+			
+			
+            <div class="shapeRocket position-absolute bottom-0 start-50 z-1 ms-20 d-none d-md-block">
+                
+				
+				<div class="containerRocket">
+					<iframe src="https://my.spline.design/rocket-7184f9a42bfc264aa8523c697204e138/" class="spline-embedRocket">
+					</iframe>
+					
+				</div>
+				
+				
             </div>
+			
+			
         </section>
         <!-- blog 1 -->
         <section class="section-blog-1 position-relative pt-120 pb-120">
