@@ -1332,14 +1332,25 @@ the client in the service we provide them.</p>
 											
 											<script>
 												document.getElementById("sendEmailButton").addEventListener("click", function() {
-													// Define the email details
-													var email = "mojikp@gmail.com";
-													var subject = "Subject of the Email";
-													var body = "This is the body of the email.";
-													
+													// Capture the values from the form
+													var name = document.getElementById("name").value;
+													var userEmail = document.getElementById("email").value;
+													var phone = document.getElementById("phone").value;
+													var userSubject = document.getElementById("subject").value;
+													var userMessage = document.getElementById("message").value;
+
+													// Define the recipient email
+													var recipientEmail = "mojikp@gmail.com";
+
+													// Construct the subject by including the user's subject
+													var subject = "Contact Form Submission: " + userSubject;
+
+													// Construct the email body with the user's inputs
+													var body = `Name: ${name}\nEmail: ${userEmail}\nPhone: ${phone}\n\nMessage:\n${userMessage}`;
+
 													// Construct the mailto URL
-													var mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-													
+													var mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
 													// Open the mailto link in the default mail client
 													window.location.href = mailtoLink;
 												});
