@@ -1325,10 +1325,26 @@ the client in the service we provide them.</p>
                                             <textarea class="form-control border rounded-3 pb-10" id="message" name="message" placeholder="Your message here...." aria-label="With textarea"></textarea>
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-gradient mt-3">
+                                            <button id="sendEmailButton" class="btn btn-gradient mt-3">
                                                 Send Message
                                                 <i class="ri-arrow-right-up-line"></i>
                                             </button>
+											
+											<script>
+												document.getElementById("sendEmailButton").addEventListener("click", function() {
+													// Define the email details
+													var email = "mojikp@gmail.com";
+													var subject = "Subject of the Email";
+													var body = "This is the body of the email.";
+													
+													// Construct the mailto URL
+													var mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+													
+													// Open the mailto link in the default mail client
+													window.location.href = mailtoLink;
+												});
+											</script>
+											
                                         </div>
                                     </div>
                                 </form>
