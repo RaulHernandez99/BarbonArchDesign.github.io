@@ -1360,6 +1360,17 @@ the client in the service we provide them.</p>
 												emailjs.send("service_0m2tzdk", "template_r2zlbwc", templateParams)
 													.then(function(response) {
 														alert("Correo enviado exitosamente!");
+														
+														// Limpiar los campos del formulario
+														document.getElementById("name").value = "";
+														document.getElementById("email").value = "";
+														document.getElementById("phone").value = "";
+														document.getElementById("subject").value = "";
+														document.getElementById("message").value = "";
+
+														// Desplazarse a la parte superior de la página
+														window.scrollTo(0, 0);
+														
 														console.log('SUCCESS!', response.status, response.text);
 													}, function(error) {
 														alert("Hubo un problema al enviar el correo: ", error);
