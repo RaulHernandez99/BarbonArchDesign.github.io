@@ -425,6 +425,11 @@
                                 <h3>Leave a messge</h3>
                                 <form action="#">
                                     <div class="row mt-3">
+									
+										
+										<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+										
+									
                                         <div class="col-md-6 ">
                                             <label class="mb-1 mt-3 text-dark" for="name">Your name <span class="text-primary">*</span></label>
                                             <input type="text" class="form-control border rounded-3" id="name" name="name" placeholder="John Doe" aria-label="username">
@@ -451,33 +456,49 @@
                                                 <i class="ri-arrow-right-up-line"></i>
                                             </button>
 											
-											<script>
-												document.getElementById("sendEmailButton").addEventListener("click", function() {
-													// Capture the values from the form
-													var name = document.getElementById("name").value;
-													var userEmail = document.getElementById("email").value;
-													var phone = document.getElementById("phone").value;
-													var userSubject = document.getElementById("subject").value;
-													var userMessage = document.getElementById("message").value;
+										
+										<script>
+											(function(){
+												emailjs.init("-mQY-kKB2_T-kkoLA");  // Reemplaza con tu User ID de EmailJS
+											})();
 
-													// Define the recipient email
-													var recipientEmail = "fifthdimension.sv@gmail.com";
+											document.getElementById("sendEmailButton").addEventListener("click", function(event) {
+												event.preventDefault();  // Evita el comportamiento predeterminado del botón
 
-													// Construct the subject by including the user's subject
-													var subject = "Fifth Dimension Studio web: " + userSubject;
+												var name = document.getElementById("name").value;
+												var userEmail = document.getElementById("email").value;
+												var phone = document.getElementById("phone").value;
+												var userSubject = document.getElementById("subject").value;
+												var userMessage = document.getElementById("message").value;
 
-													// Construct the email body with the user's inputs
-													var body = `Name: ${name}\nEmail: ${userEmail}\nPhone: ${phone}\n\nMessage:\n${userMessage}`;
+												// Definir el objeto de parámetros para el correo
+												var templateParams = {
+													from_name: name,
+													from_email: userEmail,
+													phone: phone,
+													subject: userSubject,
+													message: userMessage
+												};
 
-													// Construct the mailto URL
-													var mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-
-													// Open the mailto link in the default mail client
-													window.location.href = mailtoLink;
-												});
-											</script>
+												// Enviar el correo usando EmailJS
+												emailjs.send("service_0m2tzdk", "template_r2zlbwc", templateParams)
+													.then(function(response) {
+														alert("Correo enviado exitosamente!");
+														console.log('SUCCESS!', response.status, response.text);
+													}, function(error) {
+														alert("Hubo un problema al enviar el correo: ", error);
+														console.log('FAILED...', error);
+													});
+											});
+										</script>
+										
 											
                                         </div>
+										
+										
+										
+										
+										
                                     </div>
                                 </form>
                             </div>
