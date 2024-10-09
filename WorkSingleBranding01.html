@@ -23,6 +23,66 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&amp;family=Playfair+Display:wght@400..900&amp;family=Urbanist:wght@100..900&amp;display=swap" rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/main.css">
+	
+	
+	<style>
+		/* Slider container */
+		.slider {
+		  position: relative;
+		  width: 100%;
+		  max-width: 1200px; /* Adjust the width as needed */
+		  margin: auto;
+		  overflow: hidden;
+		  border: 2px solid #ddd; /* Optional: for visual styling */
+		  border-radius: 10px; /* Optional: rounded corners */
+		}
+
+		/* Slider inner container for images */
+		.slider-container {
+		  display: flex;
+		  transition: transform 0.5s ease-in-out;
+		}
+
+		/* Each image inside the slider */
+		.slider-container img {
+		  width: 100%;
+		  flex-shrink: 0;
+		}
+
+		/* Navigation buttons */
+		.prev, .next {
+		  position: absolute;
+		  top: 50%;
+		  transform: translateY(-50%);
+		  background-color: rgba(0, 0, 0, 0.5); /* Background color */
+		  color: white; /* Text color */
+		  border: none; /* Remove border */
+		  padding: 10px; /* Padding inside the circle */
+		  cursor: pointer; /* Pointer cursor on hover */
+		  border-radius: 50%; /* Make buttons circular */
+		  width: 40px; /* Set a fixed width for circles */
+		  height: 40px; /* Set a fixed height for circles */
+		  display: flex; /* Use flexbox for centering content */
+		  align-items: center; /* Center vertically */
+		  justify-content: center; /* Center horizontally */
+		  font-size: 20px; /* Increase font size for arrow symbols */
+		}
+
+		/* Positioning the buttons */
+		.prev {
+		  left: 10px; /* Distance from the left */
+		}
+
+		.next {
+		  right: 10px; /* Distance from the right */
+		}
+
+		/* Optional: Hover effect for buttons */
+		.prev:hover, .next:hover {
+		  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+		}
+	  </style>
+	
 </head>
 
 <body>
@@ -227,7 +287,39 @@
                             <h6>fushion.wr</h6>
                         </div>
                     </div>
-                    <img src="WorkSingleImages/img-background.png" alt="zelio">
+					
+                    <div class="slider">
+					  <div class="slider-container">
+						<img src="WorkSingleImages/img-background.png" alt="Image 1">
+						<img src="WorkSingleImages/img-background.png" alt="Image 2">
+						<img src="WorkSingleImages/img-background.png" alt="Image 3">
+						<!-- Add more images as needed -->
+					  </div>
+					  <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+					  <button class="next" onclick="moveSlide(1)">&#10095;</button>
+					</div>
+					
+					
+					 <script>
+						let currentIndex = 0;
+
+						function moveSlide(direction) {
+						  const slider = document.querySelector('.slider-container');
+						  const images = document.querySelectorAll('.slider-container img');
+						  const totalImages = images.length;
+
+						  currentIndex += direction;
+
+						  if (currentIndex < 0) {
+							currentIndex = totalImages - 1;
+						  } else if (currentIndex >= totalImages) {
+							currentIndex = 0;
+						  }
+
+						  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+						}
+					  </script>
+					
                     <div class="col-lg-8 mx-lg-auto mt-8">
                         <h5 class="fs-5 fw-medium">Description</h5>
                         <p class="text-300">Travila is a comprehensive travel booking app designed to provide users with a seamless and enjoyable booking experience. The project involved creating an intuitive and visually appealing user interface, ensuring that users can effortlessly book flights, hotels, and car rentals all within a single app. The primary goal was to enhance the overall user experience, making travel planning easy and enjoyable.</p>
