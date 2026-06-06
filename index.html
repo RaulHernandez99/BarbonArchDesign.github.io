@@ -189,23 +189,23 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" href="index.html">Home</a>
+                                <a class="nav-link active" href="index.html"  data-key="home" >Home</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="https://docs.google.com/presentation/d/e/2PACX-1vTPl4vyi__-kyytK8sAPkqwkEIFJb6E47B0jnMOp4FFDdrkuAJHtsIPgXuu79rAbiGPrPAdynaK9x7e/pub?start=false&loop=false&delayms=60000">Services</a>
+                                <a class="nav-link" href="https://docs.google.com/presentation/d/e/2PACX-1vTPl4vyi__-kyytK8sAPkqwkEIFJb6E47B0jnMOp4FFDdrkuAJHtsIPgXuu79rAbiGPrPAdynaK9x7e/pub?start=false&loop=false&delayms=60000" data-key="services" >Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="https://www.behance.net/gallery/223309545/Portfolio-2025">Portfolio</a>
+                                <a class="nav-link" href="https://www.behance.net/gallery/223309545/Portfolio-2025" data-key="portfolio" >Portfolio</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="pricing.html">Pricing</a>
+                                <a class="nav-link" href="pricing.html" data-key="pricing">Pricing</a>
                             </li>
 
                             
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="#contact" data-key="contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -223,6 +223,11 @@
                         </a>
                         
                     </div>
+					
+					
+					
+					
+					
                     <div class="burger-icon burger-icon-white border rounded-3">
                         <span class="burger-icon-top"></span>
                         <span class="burger-icon-mid"></span>
@@ -230,6 +235,14 @@
                     </div>
                 </div>
             </div>
+			
+			<button id="langToggle" class="btn btn-outline-light ms-3">
+				EN
+			</button>
+			
+			
+			
+			
             <div class="dark-light-switcher pe-10 pe-lg-0 pe-0 ps-md-5 ps-0 ps-lg-4 pe-lg-4 d-flex justify-content-center align-items-center icon_80">
                 <i class="ri-sun-line text-warning"></i>
                 <!-- <i class="bi theme-icon bi-moon-stars-fill"></i> -->
@@ -242,11 +255,11 @@
                 <button><i class="ri-close-line"></i></button>
             </div>
             <div class="offCanvas__logo mb-5">
-                <h3 class="mb-0">Get in touch</h3>
+                <h3 class="mb-0" data-key="getInTouch">Get in touch</h3>
             </div>
             <div class="offCanvas__side-info mb-30">
                 <div class="contact-list mb-30">
-                    <p class="fs-6 fw-medium text-200 mb-5">I'm always excited to take on new projects and collaborate with innovative minds.</p>
+                    <p class="fs-6 fw-medium text-200 mb-5"><span data-key="Label001">I'm always excited to take on new projects and collaborate with innovative minds.</span></p>
                     <div class="mb-3">
                         <span class="text-400 fs-5">Whatsaap</span>
                         <p class="mb-0">+503 7852-4460</p>
@@ -266,7 +279,7 @@
                 </div>
 
                 <div class="contact-list">
-                    <p class="text-400 fs-5 mb-2">Social</p>
+                    <p class="text-400 fs-5 mb-2" data-key="social">Social</p>
                     <div class="d-md-flex d-none gap-3">
                         <a href="https://www.facebook.com/fifthdimension.sv">
                             <i class="ri-facebook-circle-fill fs-18"></i>
@@ -302,29 +315,33 @@
                             <nav>
                                 <ul class="mobile-menu font-heading ps-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" href="index.html">Home</a>
+                                        <a class="nav-link active" href="index.html" data-key="home">Home</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://docs.google.com/presentation/d/e/2PACX-1vTPl4vyi__-kyytK8sAPkqwkEIFJb6E47B0jnMOp4FFDdrkuAJHtsIPgXuu79rAbiGPrPAdynaK9x7e/pub?start=false&loop=false&delayms=60000">Services</a>
+                                        <a class="nav-link" href="https://docs.google.com/presentation/d/e/2PACX-1vTPl4vyi__-kyytK8sAPkqwkEIFJb6E47B0jnMOp4FFDdrkuAJHtsIPgXuu79rAbiGPrPAdynaK9x7e/pub?start=false&loop=false&delayms=60000" data-key="services">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="https://www.behance.net/gallery/223309545/Portfolio-2025">Portfolio</a>
+                                        <a class="nav-link" href="https://www.behance.net/gallery/223309545/Portfolio-2025" data-key="portfolio">Portfolio</a>
                                     </li>
 
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pricing.html">Pricing</a>
+                                        <a class="nav-link" href="pricing.html" data-key="pricing">Pricing</a>
                                     </li>
 
                                     
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#contact">Contact</a>
+                                        <a class="nav-link" href="#contact" data-key="contact">Contact</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
                 </div>
+				
+				
+				
+				
             </div>
         </div>
 
@@ -336,19 +353,18 @@
             <div class="container position-relative z-3">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <span class="text-dark">👋 Hi there, Welcome to</span>
-                        <h1 class="ds-2 mb-3">Fifth Dimension <span class="text-primary">Interior Design Experiences</span></h1>
-                        <p class="text-300 mb-6">As designers, our brains rarely shut down and that is valuable to
-the client in the service we provide them.</p>
+                        <span class="text-dark"><span data-key="Label002">👋 Hi there, Welcome to</span></span>
+                        <h1 class="ds-2 mb-3">Fifth Dimension <span class="text-primary"><span data-key="Label003">Interior Design Experiences</span></span></h1>
+                        <p class="text-300 mb-6"><span data-key="Label004">As designers, our brains rarely shut down and that is valuable to the client in the service we provide them.</span></p>
                         <a href="assets/CV_2024_DANIELA BARBÓN_ENGLISH.pdf" class="btn btn-gradient me-2" target="_blank">
-                            Download CV
+                            <span data-key="Label005">Download CV</span>
                             <i class="ri-download-line ms-2"></i>
                         </a>
                         <a href="#contact" class="btn btn-outline-secondary d-inline-flex align-items-center">
-                            <span>Hire me</span>
+                            <span data-key="Label006">Hire me</span>
                             <i class="ri-arrow-right-line ms-2"></i>
                         </a>
-                        <p class="text-400 mt-6 mb-3">+ 8 years with professional interior design experience</p>
+                        <p class="text-400 mt-6 mb-3"><span data-key="Label007">+ 8 years with professional interior design experience</span></p>
                         <div class="d-flex gap-3">
                             <div class="brand-logo icon-xl icon-shape rounded-3 bg-900">
 								<div class="image-container2">
@@ -412,8 +428,8 @@ the client in the service we provide them.</p>
                                 <div class="content text-center mx-auto d-flex align-items-center">
                                     <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="8"></span></span>
                                     <div class="text-start ms-2">
-                                        <p class="fs-5 mb-0 text-300">Year of</p>
-                                        <p class="fs-5 mb-0 fw-bold">Experience</p>
+                                        <p class="fs-5 mb-0 text-300"><span data-key="Label008">Year of</span></p>
+                                        <p class="fs-5 mb-0 fw-bold"><span data-key="Label009">Experience</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -423,8 +439,8 @@ the client in the service we provide them.</p>
                                 <div class="content text-center mx-auto d-flex align-items-center">
                                     <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="350"></span></span>
                                     <div class="text-start ms-2">
-                                        <p class="fs-5 mb-0 text-300">Projects</p>
-                                        <p class="fs-5 mb-0 fw-bold">Completed</p>
+                                        <p class="fs-5 mb-0 text-300"><span data-key="Label010">Projects</span></p>
+                                        <p class="fs-5 mb-0 fw-bold"><span data-key="Label011">Completed</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -434,8 +450,8 @@ the client in the service we provide them.</p>
                                 <div class="content text-center mx-auto d-flex align-items-center">
                                     <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="480"></span></span>
                                     <div class="text-start ms-2">
-                                        <p class="fs-5 mb-0 text-300">Satisfied</p>
-                                        <p class="fs-5 mb-0 fw-bold">Happy Clients</p>
+                                        <p class="fs-5 mb-0 text-300"><span data-key="Label012">Satisfied</span></p>
+                                        <p class="fs-5 mb-0 fw-bold"><span data-key="Label013">Happy Clients</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -445,8 +461,8 @@ the client in the service we provide them.</p>
                                 <div class="content text-center mx-auto d-flex align-items-center">
                                     <span class="ds-3 count text-primary fw-medium my-0">+<span class="odometer ds-1 text-dark fw-semibold" data-count="5"></span></span>
                                     <div class="text-start ms-2">
-                                        <p class="fs-5 mb-0 text-300">Awards</p>
-                                        <p class="fs-5 mb-0 fw-bold">Won Received</p>
+                                        <p class="fs-5 mb-0 text-300"><span data-key="Label014">Awards</span></p>
+                                        <p class="fs-5 mb-0 fw-bold"><span data-key="Label015">Won Received</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -465,8 +481,8 @@ the client in the service we provide them.</p>
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-7 me-auto">
-                        <h3 class="ds-3 mt-3 mb-3 text-primary">Our Core Values</h3>
-                        <span class="fs-5 fw-medium text-200">5D Experience
+                        <h3 class="ds-3 mt-3 mb-3 text-primary"><span data-key="Label016">Our Core Values</span></h3>
+                        <span class="fs-5 fw-medium text-200"><span data-key="Label017">5D Experience</span>
                         </span>
                     </div>
                 </div>
@@ -477,13 +493,13 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">01.</span>
-                                        Dynamically Engaging
+                                        <span data-key="Label018">Dynamically Engaging</span>
                                     </a>
                                 </h3>
                                 <a  class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        Creating environments where clients feel entirely immersed.<br>
-                                        Making every space an extension of your imagination and lifestyle.
+                                        <span data-key="Label019">Creating environments where clients feel entirely immersed.</span><br>
+                                        <span data-key="Label020">Making every space an extension of your imagination and lifestyle.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -499,13 +515,14 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">02.</span>
-                                        Driven by New Technologies
+                                        <span data-key="Label021">Driven by New Technologies</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        We leverage the power of AI to push the limits of interior design from<br>
-                                        adaptive, smart spaces to generating hyper-realistic 3D visualizations
+                                        <span data-key="Label022">We leverage the power of AI to push the limits of interior design from</span>
+										<br>
+                                        <span data-key="Label023">adaptive, smart spaces to generating hyper-realistic 3D visualizations</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -521,14 +538,16 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">03.</span>
-                                        Designing New Dimensions
+                                        <span data-key="Label024">Designing New Dimensions</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        Creating spaces that visually communicate your brand’s ethos.<br>
-										Whether it's a commercial space or a branded interior, we ensure<br>
-                                        that every detail reflects your message, purpose, and values.
+                                        <span data-key="Label025">Creating spaces that visually communicate your brand’s ethos.</span>
+										<br>
+										<span data-key="Label026">Whether it's a commercial space or a branded interior, we ensure</span>
+										<br>
+                                        <span data-key="Label027">that every detail reflects your message, purpose, and values.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -544,13 +563,14 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">04.</span>
-                                        Distinguishing from the Rest
+                                        <span data-key="Label028">Distinguishing from the Rest</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        We turn your vision into spaces that leave a lasting impression,<br>
-                                        offering more than just a service, but an experience.
+                                        <span data-key="Label029">We turn your vision into spaces that leave a lasting impression,</span>
+										<br>
+                                        <span data-key="Label030">offering more than just a service, but an experience.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -565,14 +585,15 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">05.</span>
-                                        Diagramming - Limitless
+                                        <span data-key="Label031">Diagramming - Limitless</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        No matter the size or scope of your project, we aim to elevate it<br>
-                                        beyond expectations. Delivering results that feel out of this world<br>
-										and beyond the ordinary.
+                                        <span data-key="Label032">No matter the size or scope of your project, we aim to elevate it</span><br>
+                                        <span data-key="Label033">beyond expectations. Delivering results that feel out of this world</span>
+										<br>
+										<span data-key="Label034">and beyond the ordinary.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -590,16 +611,16 @@ the client in the service we provide them.</p>
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-7 me-auto">
-                        <h3 class="ds-3 mt-3 mb-3 text-primary">Our Latest Works</h3>
+                        <h3 class="ds-3 mt-3 mb-3 text-primary"><span data-key="Label035">Our Latest Works</span></h3>
                         <span class="fs-5 fw-medium text-200">
-                            I believe that working hard and trying to learn every day will
+                            <span data-key="Label036">I believe that working hard and trying to learn every day will</span>
                             <br>
-                            make me improve in satisfying my customers.
+                            <span data-key="Label037">make me improve in satisfying my customers.</span>
                         </span>
                     </div>
                     <div class="col-lg-auto">
                         <a href="work.html" class="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto d-none d-xl-block">
-                            View All Projects
+                            <span data-key="Label038">View All Projects</span>
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -610,11 +631,21 @@ the client in the service we provide them.</p>
             <div class="container">
                 <div class="text-start">
                     <div class="button-group filter-button-group filter-menu-active">
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase active" data-filter="*">All Projects</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Residential">Residential</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Comercial">Commercial</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Cultural">Cultural</button>
-                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Branding">Branding</button>
+                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase active" data-filter="*">
+						<span data-key="Label039">All Projects</span>
+						</button>
+                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Residential">
+						<span data-key="Label040">Residential</span>
+						</button>
+                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Comercial">
+						<span data-key="Label041">Commercial</span>
+						</button>
+                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Cultural">
+						<span data-key="Label042">Cultural</span>
+						</button>
+                        <button class="btn btn-md btn-filter mb-2 me-2 text-uppercase " data-filter=".Branding">
+						<span data-key="Label043">Branding</span>
+						</button>
                     </div>
                 </div>
                 <div class="row masonry-active justify-content-between mt-6">
@@ -626,7 +657,9 @@ the client in the service we provide them.</p>
                             </a>
                             <div class="d-flex align-items-center mt-4">
                                 <a href="work-residential.html" class="project-card-content">
-                                    <h3 class="fw-semibold">Residential</h3>
+                                    <h3 class="fw-semibold">
+									<span data-key="Label044">Residential</span>
+									</h3>
                                 </a>
                                 <a href="work-residential.html" class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
@@ -641,7 +674,9 @@ the client in the service we provide them.</p>
                             </a>
                             <div class="d-flex align-items-center mt-4">
                                 <a href="work-commercial.html" class="project-card-content">
-                                    <h3 class="fw-semibold">Commercial</h3>
+                                    <h3 class="fw-semibold">
+									<span data-key="Label045">Commercial</span>
+									</h3>
                                 </a>
                                 <a href="work-commercial.html" class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
@@ -656,7 +691,9 @@ the client in the service we provide them.</p>
                             </a>
                             <div class="d-flex align-items-center mt-4">
                                 <a href="work-cultural.html" class="project-card-content">
-                                    <h3 class="fw-semibold">Cultural</h3>
+                                    <h3 class="fw-semibold">
+									<span data-key="Label046">Cultural</span>
+									</h3>
                                 </a>
                                 <a href="work-cultural.html" class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
@@ -671,7 +708,9 @@ the client in the service we provide them.</p>
                             </a>
                             <div class="d-flex align-items-center mt-4">
                                 <a href="work-branding.html" class="project-card-content">
-                                    <h3 class="fw-semibold">Branding</h3>
+                                    <h3 class="fw-semibold">
+									<span data-key="Label047">Branding</span>
+									</h3>
                                 </a>
                                 <a href="work-branding.html" class="project-card-icon icon-shape ms-auto icon-md rounded-circle">
                                     <i class="ri-arrow-right-up-line"></i>
@@ -689,18 +728,20 @@ the client in the service we provide them.</p>
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-7 me-auto">
-                        <h3 class="ds-3 mt-3 mb-3 text-primary">Get to know us</h3>
+                        <h3 class="ds-3 mt-3 mb-3 text-primary">
+						<span data-key="Label048">Get to know us</span>
+						</h3>
                         <span class="fs-5 fw-medium text-200">
-                            We aim to inspire others to transform the world,
+                            <span data-key="Label049">We aim to inspire others to transform the world,</span>
 							<br>
-							one space at a time, creating experiences that
+							<span data-key="Label050">one space at a time, creating experiences that</span>
 							<br>
-							transcend and reflect a purpose.
+							<span data-key="Label051">transcend and reflect a purpose.</span>
                         </span>
                     </div>
                     <div class="col-lg-auto">
                         <a href="#contact" class="btn btn-gradient mt-lg-0 mt-5 ms-lg-auto">
-                            Get in touch
+                            <span data-key="Label052">Get in touch</span>
                             <i class="ri-arrow-right-up-line"></i>
                         </a>
                     </div>
@@ -710,7 +751,9 @@ the client in the service we provide them.</p>
                         <div class="resume-card p-lg-6 p-4 mb-lg-0 mb-6">
                             <div class="resume-card-header d-flex align-items-end">
                                 <img class="border-linear-1 border-3 pb-2 pe-2" src="images/icon-1.svg" alt="">
-                                <h3 class="fw-semibold mb-0 border-bottom border-600 border-3 pb-2 w-100">Education</h3>
+                                <h3 class="fw-semibold mb-0 border-bottom border-600 border-3 pb-2 w-100">
+								<span data-key="Label053">Education</span>
+								</h3>
                             </div>
                             <div class="resume-card-body">
                                 <div class="resume-card-item px-4 py-3 mt-5">
@@ -718,11 +761,13 @@ the client in the service we provide them.</p>
                                         <div class="">
                                             <p class="fw-extra-bold text-linear-1 mb-2">2018</p>
                                             <h5 class="">
-												Commercial and Gatronomic
+												<span data-key="Label054">Commercial and Gatronomic</span>
 												<br>
-												Interior Design Specialization
+												<span data-key="Label055">Interior Design Specialization</span>
 											</h5>
-                                            <p class="text-300 mb-0">DR. JOSÉ MATÍAS DELGADO UNIVERSITY</p>
+                                            <p class="text-300 mb-0">
+											<span data-key="Label056">DR. JOSÉ MATÍAS DELGADO UNIVERSITY</span>
+											</p>
                                         </div>
                                         
                                     </div>
@@ -731,8 +776,12 @@ the client in the service we provide them.</p>
                                     <div class="d-flex align-items-end">
                                         <div class="">
                                             <p class="fw-extra-bold text-linear-1 mb-2">2013-2018</p>
-                                            <h5 class="">Interior Architecture (CUM Laude)</h5>
-                                            <p class="text-300 mb-0">DR. JOSÉ MATÍAS DELGADO UNIVERSITY</p>
+                                            <h5 class="">
+											<span data-key="Label057">Interior Architecture (CUM Laude)</span>
+											</h5>
+                                            <p class="text-300 mb-0">
+											<span data-key="Label058">DR. JOSÉ MATÍAS DELGADO UNIVERSITY</span>
+											</p>
                                         </div>
                                         
                                     </div>
@@ -741,8 +790,12 @@ the client in the service we provide them.</p>
                                     <div class="d-flex align-items-end">
                                         <div class="">
                                             <p class="fw-extra-bold text-linear-1 mb-2">2000-2012</p>
-                                            <h5 class="">High School Diploma</h5>
-                                            <p class="text-300 mb-0">AMERICAN CHRISTIAN SCHOOL</p>
+                                            <h5 class="">
+											<span data-key="Label059">High School Diploma</span>
+											</h5>
+                                            <p class="text-300 mb-0">
+											<span data-key="Label060">AMERICAN CHRISTIAN SCHOOL</span>
+											</p>
                                         </div>
                                         
                                     </div>
@@ -752,8 +805,12 @@ the client in the service we provide them.</p>
 										<div class="d-flex align-items-end">
 											<div class="">
 												<p class="fw-extra-bold text-linear-1 mb-2">2000-2012</p>
-												<h5 class="">High School Diploma</h5>
-												<p class="text-300 mb-0">AMERICAN CHRISTIAN SCHOOL</p>
+												<h5 class="">
+												<span data-key="Label061">High School Diploma</span>
+												</h5>
+												<p class="text-300 mb-0">
+												<span data-key="Label062">AMERICAN CHRISTIAN SCHOOL</span>
+												</p>
 											</div>
 											
 										</div>
@@ -766,23 +823,27 @@ the client in the service we provide them.</p>
                         <div class="resume-card p-lg-6 p-4 h-100">
                             <div class="resume-card-header d-flex align-items-end">
                                 <img class="border-linear-1 border-3 pb-2 pe-2" src="images/icon-2.svg" alt="">
-                                <h3 class="fw-semibold mb-0 border-bottom border-600 border-3 pb-2 w-100">Experience</h3>
+                                <h3 class="fw-semibold mb-0 border-bottom border-600 border-3 pb-2 w-100">
+								<span data-key="Label063">Experience</span>
+								</h3>
                             </div>
                             <div class="resume-card-body">
                                 <div class="resume-card-item px-4 py-3 mt-5">
                                     <p class="fw-extra-bold text-linear-1 mb-2">2024</p>
                                     <h5 class="">
-									Founder and Creative Director
+										<span data-key="Label064">Founder and Creative Director</span>
 									<br>
 									<div class="service-card-icon">
-										Founder and Creative Director
+										<span data-key="Label065">Founder and Creative Director</span>
 									</div>
 									</h5>
                                     <p class="text-300 mb-0">FIFTH DIMENSION STUDIO - SV</p>
                                 </div>
                                 <div class="resume-card-item px-4 py-3 mt-5">
                                     <p class="fw-extra-bold text-linear-1 mb-2">2022 - 2023</p>
-                                    <h5 class="">Purchase and Subcontracts Manager</h5>
+                                    <h5 class="">
+										<span data-key="Label066">Purchase and Subcontracts Manager</span>
+									</h5>
                                     <p class="text-300 mb-0">PVT - MX</p>
                                 </div>
                                 <div class="resume-card-item px-4 py-3 mt-5">
@@ -792,7 +853,9 @@ the client in the service we provide them.</p>
                                 </div>
                                 <div class="resume-card-item px-4 py-3 mt-4">
                                     <p class="fw-extra-bold text-linear-1 mb-2">2018 - 2022</p>
-                                    <h5 class="">Lead Interior Designer</h5>
+                                    <h5 class="">
+										<span data-key="Label118">Lead Interior Designer</span>
+									</h5>
                                     <p class="text-300 mb-0">CONCORDA - SV / IT</p>
                                 </div>
                             </div>
@@ -802,7 +865,8 @@ the client in the service we provide them.</p>
             </div>
             <div class="scroll-move-right position-relative pb-160 pt-lg-150">
                 <div class="d-flex align-items-center gap-5 wow img-custom-anim-top position-absolute top-50 start-50 translate-middle">
-                    <h3 class="stroke fs-150 text-uppercase text-white" style="font-size: 100px;">INTERIORS . BRANDING . ARCHITECTURE</h3>
+                    <h3 class="stroke fs-150 text-uppercase text-white" style="font-size: 100px;">		<span data-key="Label067">INTERIORS . BRANDING . ARCHITECTURE</span>
+					</h3>
                 </div>
             </div>
         </section>
@@ -812,11 +876,13 @@ the client in the service we provide them.</p>
             <div class="container">
                 <div class="row">
                     <div class="text-center mb-7">
-                        <h3 class="ds-3 mt-3 mb-3 text-primary">Our Skills</h3>
+                        <h3 class="ds-3 mt-3 mb-3 text-primary">
+							<span data-key="Label068">Our Skills</span>
+						</h3>
                         <span class="fs-5 fw-medium text-200">
-                            We thrive on turning complex problems into simple, beautiful
+                            <span data-key="Label069">We thrive on turning complex problems into simple, beautiful</span>
                             <br class="d-md-block d-none">
-                            solutions that enhance our clients life quality.
+                            <span data-key="Label070">solutions that enhance our clients life quality.</span>
                         </span>
                     </div>
                     <div class="d-flex flex-wrap flex-lg-nowrap justify-content-center gap-3 mb-7 px-6">
@@ -892,7 +958,9 @@ the client in the service we provide them.</p>
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-7 me-auto">
-                        <h3 class="ds-3 mt-3 mb-3 text-primary">What do we offer?</h3>
+                        <h3 class="ds-3 mt-3 mb-3 text-primary">
+							<span data-key="Label071">What do we offer?</span>
+						</h3>
                         <span class="fs-5 fw-medium text-200">
                         </span>
                     </div>
@@ -905,17 +973,17 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">01.</span>
-                                        Residential
+											<span data-key="Label072">Residential</span>
                                     </a>
                                 </h3>
                                 <a  class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        In the fast-paced rhythm of life, your home should be a sanctuary—an oasis of style, comfort, and functionality
-										that reflects who you are. We specialize in creating personalized living spaces from integrating ethnic collections
-										to optimizing work-from-home setups. 
+                                        <span data-key="Label073">In the fast-paced rhythm of life, your home should be a sanctuary—an oasis of style, comfort, and functionality </span>
+										<span data-key="Label074">that reflects who you are. We specialize in creating personalized living spaces from integrating ethnic collections </span>
+										<span data-key="Label075">to optimizing work-from-home setups.</span>
 										<br>
-										We craft tailored environments where form meets function, ensuring
-										every corner of your home feels intentional and inspiring.
+										<span data-key="Label076">We craft tailored environments where form meets function, ensuring </span>
+										<span data-key="Label077">every corner of your home feels intentional and inspiring.</span>
 										
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
@@ -932,14 +1000,14 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">02.</span>
-                                        Commercial
+											<span data-key="Label078">Commercial</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        In the world of retail, first impressions are everything. We specialize in designing commercial spaces that not only
-										capture attention but create immersive, engaging environments that reflect your brand's identity and makes
-										elevate your shop above the competition; our main goal is to design Spaces that sell.
+                                        <span data-key="Label079">In the world of retail, first impressions are everything. We specialize in designing commercial spaces that not only </span>
+										<span data-key="Label080">capture attention but create immersive, engaging environments that reflect your brand's identity and makes </span>
+										<span data-key="Label081">elevate your shop above the competition; our main goal is to design Spaces that sell.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -955,16 +1023,16 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">03.</span>
-                                        Corporate
+                                        <span data-key="Label082">Corporate</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        A well-designed offe is more than just a place to work—it’s a catalyst for creativity, collaboration, and productivity. 
-										We specialize in designing corporate spaces that inspire 
-										innovation while supporting the diverse needs of modern professionals. 
-										With a focus on functionality, flexibility, and aesthetics, we empower buisnesses environments to enhance workflow, 
-										foster team synergy, and reflect your company’s culture.
+                                        <span data-key="Label083">A well-designed office is more than just a place to work—it’s a catalyst for creativity, collaboration, and productivity. </span>
+										<span data-key="Label084">We specialize in designing corporate spaces that inspire </span> 
+										<span data-key="Label085">innovation while supporting the diverse needs of modern professionals. </span> 
+										<span data-key="Label086">With a focus on functionality, flexibility, and aesthetics, we empower businesses environments to enhance workflow, </span> 
+										<span data-key="Label087">foster team synergy, and reflect your company’s culture.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -980,15 +1048,16 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">04.</span>
-                                        Cultural
+											<span data-key="Label088">Cultural</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        In today’s market, authenticity is key—especially in cultural Airbnb properties and boutique shops. 
-										We capture the essence of local heritage while offering modern comfort and style. 
-										Each project is a reflection of its surroundings, blending traditional craftsmanship with contemporary design elements to create immersive environments that tell a unique store rooted in 
-										cultural identity.
+                                        <span data-key="Label089">In today’s market, authenticity is key—especially in cultural Airbnb properties and boutique shops. </span> 
+										<span data-key="Label090">We capture the essence of local heritage while offering modern comfort and style. </span> 
+										<span data-key="Label091">Each project is a reflection of its surroundings, blending traditional craftsmanship with contemporary design elements to create immersive environments that tell a </span>
+										<span data-key="Label092">unique story rooted in </span> 
+										<span data-key="Label093">cultural identity.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -1003,14 +1072,15 @@ the client in the service we provide them.</p>
                                 <h3 class="service-card-title mb-0" style="width: 70%;">
                                     <a >
                                         <span class="service-number">05.</span>
-                                        Branding
+                                        <span data-key="Label094">Branding</span>
                                     </a>
                                 </h3>
                                 <a class="d-md-flex d-block ps-lg-10 align-items-center justify-content-end w-100">
                                     <p class="service-card-text my-3">
-                                        Your space is an extension of your brand, a living, breathing representation of your identity. We transform interiors from a concept into a tangible experience that resonates in every 
-										detail—from the color palette to the furniture—working in harmony to express your vision. Environments that not only captivate but also communicate
-										your brand's values and personality.
+                                        <span data-key="Label095">Your space is an extension of your brand, a living, breathing representation of your identity. We transform interiors from a concept into a tangible experience that resonates in every </span> 										
+										<span data-key="Label096">detail—from the color palette to the furniture—working in harmony to express your vision. Environments that not only captivate but also communicate </span>
+										
+										<span data-key="Label097">your brand's values and personality.</span>
                                     </p>
                                     <div class="service-card-icon icon-shape ms-auto icon-md rounded-circle border">
                                         <i class="ri-arrow-right-up-line"></i>
@@ -1032,13 +1102,15 @@ the client in the service we provide them.</p>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
-                        <h3 class="ds-3 mt-3 mb-3 text-primary">Happy Clients</h3>
+                        <h3 class="ds-3 mt-3 mb-3 text-primary">
+							<span data-key="Label098">Happy Clients</span>
+						</h3>
                         <span class="fs-5 fw-medium text-200">
-                            We believe that relentless effort and commitment to a daily
+                            <span data-key="Label099">We believe that relentless effort and commitment to a daily</span>
                             <br>
-                            growth are the keys to consistently exceeding
+                            <span data-key="Label100">growth are the keys to consistently exceeding</span>
 							<br>
-							our customer expectations.
+							<span data-key="Label101">our customer expectations.</span>
                         </span>
                         <div class="row mt-8">
                             <div class="swiper slider-2 pt-2 pb-3">
@@ -1057,11 +1129,11 @@ the client in the service we provide them.</p>
                                                 <i class="ri-star-fill fs-7 text-500 text-primary"></i>
                                             </div>
                                             <h6 class="mb-7">
-												“I can't express how thrilled and satified we are with the project! 
+												<span data-key="Label102">“I can't express how thrilled and satified we are with the project!</span>
 												<br>
 												<br>
 												<br>
-												You've transformed our home into a beautiful sanctuary that perfectly reflects our style and personality.”
+												<span data-key="Label103">You've transformed our home into a beautiful sanctuary that perfectly reflects our style and personality.”</span>
 												<br>
 												<br>
 											</h6>
@@ -1103,11 +1175,11 @@ the client in the service we provide them.</p>
                                                 <i class="ri-star-fill fs-7 text-500 text-primary"></i>
                                             </div>
                                             <h6 class="mb-7">
-												“More than satisfied with our store, cause every smallest detail was understood perfectly. 
+												<span data-key="Label104">“More than satisfied with our store, cause every smallest detail was understood perfectly.</span>
 												<br>
 												<br>
 												<br>
-												I highly recommend Fifth Dimension for their professionalism from start to end and their expertise.
+												<span data-key="Label105">I highly recommend Fifth Dimension for their professionalism from start to end and their expertise.</span>
 												<br>
 											</h6>
                                             <a class="d-flex align-items-center">
@@ -1147,7 +1219,7 @@ the client in the service we provide them.</p>
                                                 <i class="ri-star-fill fs-7 text-500 text-primary"></i>
                                             </div>
                                             <h6 class="mb-7">
-												“My experience working with Fifth Dimension was very pleasing. The Final result was the perfect reflection of my expectations. I’m thankful to the studio for carrying such a detailed work and for the respect and commitment shown during every step of the execution.
+												<span data-key="Label106">“My experience working with Fifth Dimension was very pleasing. The Final result was the perfect reflection of my expectations. I’m thankful to the studio for carrying such a detailed work and for the respect and commitment shown during every step of the execution.</span>
 											</h6>
                                             <a class="d-flex align-items-center">
                                                 
@@ -1218,11 +1290,13 @@ the client in the service we provide them.</p>
         <!-- Contact 1-->
         <section id="contact" class="section-contact-1 bg-900 position-relative pt-150 pb-lg-250 pb-150 overflow-hidden">
             <div class="container position-relative z-1">
-                <h3 class="ds-3 mt-3 mb-3 text-primary">Get in touch</h3>
+                <h3 class="ds-3 mt-3 mb-3 text-primary">
+					<span data-key="Label107">Get in touch</span>
+				</h3>
                 <span class="fs-5 fw-medium text-200">
-                    I'm always excited to take on new projects and collaborate with innovative minds. If you
+                    <span data-key="Label108">I'm always excited to take on new projects and collaborate with innovative minds. If you</span>
                     <br>
-                    have a project in mind or just want to chat about design, feel free to reach out!
+                    <span data-key="Label109">have a project in mind or just want to chat about design, feel free to reach out!</span>
                 </span>
                 <div class="row mt-8">
                     <div class="col-lg-4 d-flex flex-column">
@@ -1286,35 +1360,47 @@ the client in the service we provide them.</p>
                     <div class="col-lg-7 offset-lg-1 ps-lg-0 pt-5 pt-lg-0">
                         <div class="position-relative">
                             <div class="position-relative z-2">
-                                <h3>Leave a messge</h3>
+                                <h3>
+									<span data-key="Label110">Leave a message</span>
+								</h3>
                                 <form action="#">
                                     <div class="row mt-3">
 									
 										<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 									
                                         <div class="col-md-6 ">
-                                            <label class="mb-1 mt-3 text-dark" for="name">Your name <span class="text-primary">*</span></label>
+                                            <label class="mb-1 mt-3 text-dark" for="name">
+												<span data-key="Label111">Your name</span>
+											<span class="text-primary">*</span></label>
                                             <input type="text" class="form-control border rounded-3" id="name" name="name" placeholder="John Doe" aria-label="username">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="mb-1 mt-3 text-dark" for="email">Email address <span class="text-primary">*</span></label>
+                                            <label class="mb-1 mt-3 text-dark" for="email">
+											<span data-key="Label112">Email address</span>
+											<span class="text-primary">*</span></label>
                                             <input type="text" class="form-control border rounded-3" id="email" name="email" placeholder="contact.john@gmail.com" aria-label="email">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="mb-1 mt-3 text-dark" for="phone">Your phone <span class="text-primary">*</span></label>
+                                            <label class="mb-1 mt-3 text-dark" for="phone">
+											<span data-key="Label113">Your phone</span>
+											<span class="text-primary">*</span></label>
                                             <input type="text" class="form-control border rounded-3" id="phone" name="phone" placeholder="+01 234 567 89" aria-label="phone">
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="mb-1 mt-3 text-dark" for="subject">Subject <span class="text-primary">*</span></label>
+                                            <label class="mb-1 mt-3 text-dark" for="subject">
+											<span data-key="Label114">Subject</span>
+											<span class="text-primary">*</span></label>
                                             <input type="text" class="form-control border rounded-3" id="subject" name="subject" placeholder="I want to contact for...." aria-label="subject">
                                         </div>
                                         <div class="col-12">
-                                            <label class="mb-1 mt-3 text-dark" for="message">Message <span class="text-primary">*</span></label>
+                                            <label class="mb-1 mt-3 text-dark" for="message">
+											<span data-key="Label115">Message</span>
+											<span class="text-primary">*</span></label>
                                             <textarea class="form-control border rounded-3 pb-10" id="message" name="message" placeholder="Your message here...." aria-label="With textarea"></textarea>
                                         </div>
                                         <div class="col-12">
                                             <button id="sendEmailButton" class="btn btn-gradient mt-3">
-                                                Send Message
+                                                <span data-key="Label116">Send Message</span>
                                                 <i class="ri-arrow-right-up-line"></i>
                                             </button>
 											
@@ -1418,7 +1504,9 @@ the client in the service we provide them.</p>
                     </div>
                 </div>
                 <div class="row text-center py-4">
-                    <span class="fs-6 text-white-keep">© 2024 All Rights Reserved by <span><a href="#" class="text-primary">Fifth Dimension</a></span>
+                    <span class="fs-6 text-white-keep">
+						<span data-key="Label117">© 2024 All Rights Reserved by </span>
+						<span><a href="#" class="text-primary">Fifth Dimension</a></span>
                 </span></div>
             </div>
             <div class="position-absolute top-0 start-0 w-100 h-100 z-0" data-background="assets/imgs/footer-1/background.png "></div>
@@ -1453,6 +1541,312 @@ the client in the service we provide them.</p>
     <!-- Theme JS -->
     <script src="js/main.js"></script>
     <!-- Other scripts -->
+	
+	
+	
+	
+	<script>
+const translations = {
+    en: {
+        home: "Home",
+        services: "Services",
+        portfolio: "Portfolio",
+        pricing: "Pricing",
+        contact: "Contact",
+        getInTouch: "Get in touch",
+		
+		Label001: "I'm always excited to take on new projects and collaborate with innovative minds.",
+        Label002: "👋 Hi there, Welcome to",
+        Label003: "Interior Design Experiences",
+        Label004: "As designers, our brains rarely shut down and that is valuable to the client in the service we provide them.",
+        Label005: "Download CV",
+        Label006: "Hire me",
+        Label007: "+ 8 years with professional interior design experience",
+        Label008: "Year of",
+        Label009: "Experience",
+        Label010: "Projects",
+        Label011: "Completed",
+        Label012: "Satisfied",
+        Label013: "Happy Clients",
+        Label014: "Awards",
+        Label015: "Won Received",
+        Label016: "Our Core Values",
+        Label017: "5D Experience",
+        Label018: "Dynamically Engaging",
+        Label019: "Creating environments where clients feel entirely immersed.",
+        Label020: "Making every space an extension of your imagination and lifestyle.",
+        Label021: "Driven by New Technologies",
+        Label022: "We leverage the power of AI to push the limits of interior design from",
+        Label023: "adaptive, smart spaces to generating hyper-realistic 3D visualizations",
+        Label024: "Designing New Dimensions",
+        Label025: "Creating spaces that visually communicate your brand’s ethos.",
+        Label026: "Whether it's a commercial space or a branded interior, we ensure",
+        Label027: "that every detail reflects your message, purpose, and values.",
+        Label028: "Distinguishing from the Rest",
+        Label029: "We turn your vision into spaces that leave a lasting impression,",
+        Label030: "offering more than just a service, but an experience.",
+        Label031: "Diagramming - Limitless",
+        Label032: "No matter the size or scope of your project, we aim to elevate it",
+        Label033: "beyond expectations. Delivering results that feel out of this world",
+        Label034: "and beyond the ordinary.",
+        Label035: "Our Latest Works",
+        Label036: "I believe that working hard and trying to learn every day will",
+        Label037: "make me improve in satisfying my customers.",
+        Label038: "View All Projects",
+        Label039: "All Projects",
+        Label040: "Residential",
+        Label041: "Commercial",
+        Label042: "Cultural",
+        Label043: "Branding",
+        Label044: "Residential",
+        Label045: "Commercial",
+        Label046: "Cultural",
+        Label047: "Branding",
+        Label048: "Get to know us",
+        Label049: "We aim to inspire others to transform the world,",
+        Label050: "one space at a time, creating experiences that",
+        Label051: "transcend and reflect a purpose.",
+        Label052: "Get in touch",
+        Label053: "Education",
+        Label054: "Commercial and Gastronomic",
+        Label055: "Interior Design Specialization",
+        Label056: "DR. JOSÉ MATÍAS DELGADO UNIVERSITY",
+        Label057: "Interior Architecture (CUM Laude)",
+        Label058: "DR. JOSÉ MATÍAS DELGADO UNIVERSITY",
+        Label059: "High School Diploma",
+        Label060: "AMERICAN CHRISTIAN SCHOOL",
+        Label061: "High School Diploma",
+        Label062: "AMERICAN CHRISTIAN SCHOOL",
+        Label063: "Experience",
+        Label064: "Founder and Creative Director",
+        Label065: "Founder and Creative Director",
+        Label066: "Purchase and Subcontracts Manager",
+        Label067: "INTERIORS . BRANDING . ARCHITECTURE",
+        Label068: "Our Skills",
+        Label069: "We thrive on turning complex problems into simple, beautiful",
+        Label070: "solutions that enhance our clients life quality.",
+        Label071: "What do we offer?",
+        Label072: "Residential",
+        Label073: "In the fast-paced rhythm of life, your home should be a sanctuary—an oasis of style, comfort, and functionality ",
+        Label074: "that reflects who you are. We specialize in creating personalized living spaces from integrating ethnic collections ",
+        Label075: "to optimizing work-from-home setups. ",
+        Label076: "We craft tailored environments where form meets function, ensuring ",
+        Label077: "every corner of your home feels intentional and inspiring.",
+        Label078: "Commercial",
+        Label079: "In the world of retail, first impressions are everything. We specialize in designing commercial spaces that not only ",
+        Label080: "capture attention but create immersive, engaging environments that reflect your brand's identity and makes ",
+        Label081: "elevate your shop above the competition; our main goal is to design Spaces that sell.",
+        Label082: "Corporate",
+        Label083: "A well-designed office is more than just a place to work—it’s a catalyst for creativity, collaboration, and productivity. ",
+        Label084: "We specialize in designing corporate spaces that inspire ",
+        Label085: "innovation while supporting the diverse needs of modern professionals. ",
+        Label086: "With a focus on functionality, flexibility, and aesthetics, we empower businesses environments to enhance workflow, ",
+        Label087: "foster team synergy, and reflect your company’s culture.",
+        Label088: "Cultural",
+        Label089: "In today’s market, authenticity is key—especially in cultural Airbnb properties and boutique shops. ",
+        Label090: "We capture the essence of local heritage while offering modern comfort and style. ",
+        Label091: "Each project is a reflection of its surroundings, blending traditional craftsmanship with contemporary design elements to create immersive environments that tell a ",
+        Label092: "unique story rooted in ",
+        Label093: "cultural identity.",
+        Label094: "Branding",
+        Label095: "Your space is an extension of your brand, a living, breathing representation of your identity. We transform interiors from a concept into a tangible experience that resonates in every ",
+        Label096: "detail—from the color palette to the furniture—working in harmony to express your vision. Environments that not only captivate but also communicate ",
+        Label097: "your brand's values and personality.",
+        Label098: "Happy Clients",
+        Label099: "We believe that relentless effort and commitment to a daily",
+        Label100: "growth are the keys to consistently exceeding",
+        Label101: "our customer expectations.",
+        Label102: "I can't express how thrilled and satisfied we are with the project!",
+        Label103: "You've transformed our home into a beautiful sanctuary that perfectly reflects our style and personality.",
+        Label104: "More than satisfied with our store, because every smallest detail was understood perfectly.",
+        Label105: "I highly recommend Fifth Dimension for their professionalism from start to end and their expertise.",
+        Label106: "My experience working with Fifth Dimension was very pleasing. The final result was the perfect reflection of my expectations. I'm thankful to the studio for carrying such detailed work and for the respect and commitment shown during every step of the execution.",
+        Label107: "Get in touch",
+        Label108: "I'm always excited to take on new projects and collaborate with innovative minds. If you",
+        Label109: "have a project in mind or just want to chat about design, feel free to reach out!",
+        Label110: "Leave a message",
+        Label111: "Your name",
+        Label112: "Email address",
+        Label113: "Your phone",
+        Label114: "Subject",
+        Label115: "Message",
+        Label116: "Send Message",
+        Label117: "© 2024 All Rights Reserved by"
+    },
+    es: {
+        home: "Inicio",
+        services: "Servicios",
+        portfolio: "Portafolio",
+        pricing: "Precios",
+        contact: "Contacto",
+        getInTouch: "Contáctanos",
+		
+		Label001: "Siempre estoy entusiasmada por emprender nuevos proyectos y colaborar con mentes innovadoras.",
+		Label002: "👋 Hola, Bienvenido a",
+		Label003: "Experiencias de Diseño Interior",
+		Label004: "Como diseñadores, nuestras mentes rara vez descansan y eso aporta un gran valor al cliente en cada servicio que ofrecemos.",
+		Label005: "Descargar CV",
+		Label006: "Contrátame",
+		Label007: "+ 8 años de experiencia profesional en diseño interior",
+		Label008: "Años de",
+		Label009: "Experiencia",
+		Label010: "Proyectos",
+		Label011: "Completados",
+		Label012: "Clientes",
+		Label013: "Satisfechos",
+		Label014: "Premios",
+		Label015: "Obtenidos",
+		Label016: "Nuestros Valores Fundamentales",
+		Label017: "Experiencia 5D",
+		Label018: "Dinámicamente Envolvente",
+		Label019: "Creando entornos donde los clientes se sienten completamente inmersos.",
+		Label020: "Haciendo de cada espacio una extensión de tu imaginación y estilo de vida.",
+		Label021: "Impulsados por Nuevas Tecnologías",
+		Label022: "Aprovechamos el poder de la IA para llevar el diseño interior más allá",
+		Label023: "desde espacios inteligentes y adaptativos hasta visualizaciones 3D hiperrealistas",
+		Label024: "Diseñando Nuevas Dimensiones",
+		Label025: "Creamos espacios que comunican visualmente la esencia de tu marca.",
+		Label026: "Ya sea un espacio comercial o corporativo, garantizamos",
+		Label027: "que cada detalle refleje tu mensaje, propósito y valores.",
+		Label028: "Distinguiéndonos del Resto",
+		Label029: "Transformamos tu visión en espacios que dejan una impresión duradera,",
+		Label030: "ofreciendo más que un servicio: una experiencia.",
+		Label031: "Diagramación Sin Límites",
+		Label032: "Sin importar el tamaño o alcance de tu proyecto, buscamos elevarlo",
+		Label033: "más allá de las expectativas. Entregando resultados que parecen de otro mundo",
+		Label034: "y fuera de lo ordinario.",
+		Label035: "Nuestros Últimos Trabajos",
+		Label036: "Creo que trabajar duro y aprender cada día",
+		Label037: "me permite mejorar continuamente para satisfacer a mis clientes.",
+		Label038: "Ver Todos los Proyectos",
+		Label039: "Todos los Proyectos",
+		Label040: "Residencial",
+		Label041: "Comercial",
+		Label042: "Cultural",
+		Label043: "Branding",
+		Label044: "Residencial",
+		Label045: "Comercial",
+		Label046: "Cultural",
+		Label047: "Branding",
+		Label048: "Conócenos",
+		Label049: "Buscamos inspirar a otros a transformar el mundo,",
+		Label050: "un espacio a la vez, creando experiencias que",
+		Label051: "trascienden y reflejan un propósito.",
+		Label052: "Contáctanos",
+		Label053: "Educación",
+		Label054: "Especialización Comercial y Gastronómica",
+		Label055: "Especialización en Diseño Interior",
+		Label056: "UNIVERSIDAD DR. JOSÉ MATÍAS DELGADO",
+		Label057: "Arquitectura Interior (Cum Laude)",
+		Label058: "UNIVERSIDAD DR. JOSÉ MATÍAS DELGADO",
+		Label059: "Diploma de Bachillerato",
+		Label060: "AMERICAN CHRISTIAN SCHOOL",
+		Label061: "Diploma de Bachillerato",
+		Label062: "AMERICAN CHRISTIAN SCHOOL",
+		Label063: "Experiencia",
+		Label064: "Fundadora y Directora Creativa",
+		Label065: "Fundadora y Directora Creativa",
+		Label066: "Gerente de Compras y Subcontratos",
+		Label067: "INTERIORES . BRANDING . ARQUITECTURA",
+		Label068: "Nuestras Habilidades",
+		Label069: "Nos especializamos en convertir problemas complejos en soluciones simples y hermosas",
+		Label070: "que mejoran la calidad de vida de nuestros clientes.",
+		Label071: "¿Qué Ofrecemos?",
+		Label072: "Residencial",
+		Label073: "En el ritmo acelerado de la vida, tu hogar debe ser un santuario: un oasis de estilo, comodidad y funcionalidad ",
+		Label074: "que refleje quién eres. Nos especializamos en crear espacios personalizados integrando colecciones étnicas ",
+		Label075: "y optimizando áreas para trabajar desde casa. ",
+		Label076: "Creamos ambientes a medida donde la forma y la función se unen, garantizando ",
+		Label077: "que cada rincón de tu hogar se sienta intencional e inspirador.",
+		Label078: "Comercial",
+		Label079: "En el mundo del comercio, la primera impresión lo es todo. Nos especializamos en diseñar espacios comerciales que no solo ",
+		Label080: "captan la atención, sino que crean entornos inmersivos y atractivos que reflejan la identidad de tu marca y logran ",
+		Label081: "elevar tu negocio por encima de la competencia; nuestro objetivo principal es diseñar espacios que vendan.",
+		Label082: "Corporativo",
+		Label083: "Una oficina bien diseñada es mucho más que un lugar para trabajar: es un catalizador de creatividad, colaboración y productividad. ",
+		Label084: "Nos especializamos en diseñar espacios corporativos que inspiran ",
+		Label085: "innovación mientras apoyan las diversas necesidades de los profesionales modernos. ",
+		Label086: "Con un enfoque en funcionalidad, flexibilidad y estética, ayudamos a las empresas a mejorar sus flujos de trabajo, ",
+		Label087: "fortalecer la colaboración entre equipos y reflejar la cultura de su organización.",
+		Label088: "Cultural",
+		Label089: "En el mercado actual, la autenticidad es clave, especialmente en propiedades Airbnb culturales y tiendas boutique. ",
+		Label090: "Capturamos la esencia del patrimonio local mientras ofrecemos comodidad y estilo modernos. ",
+		Label091: "Cada proyecto es un reflejo de su entorno, combinando artesanía tradicional con elementos contemporáneos para crear experiencias inmersivas que cuentan una ",
+		Label092: "historia única arraigada en ",
+		Label093: "la identidad cultural.",
+		Label094: "Branding",
+		Label095: "Tu espacio es una extensión de tu marca, una representación viva y tangible de tu identidad. Transformamos interiores desde un concepto hasta una experiencia que resuena en cada ",
+		Label096: "detalle, desde la paleta de colores hasta el mobiliario, trabajando en armonía para expresar tu visión. Ambientes que no solo cautivan, sino que también comunican ",
+		Label097: "los valores y la personalidad de tu marca.",
+		Label098: "Clientes Felices",
+		Label099: "Creemos que el esfuerzo constante y el compromiso con el crecimiento diario",
+		Label100: "son las claves para superar continuamente",
+		Label101: "las expectativas de nuestros clientes.",
+		Label102: "¡No puedo expresar lo emocionados y satisfechos que estamos con el proyecto!",
+		Label103: "Han transformado nuestro hogar en un hermoso refugio que refleja perfectamente nuestro estilo y personalidad.",
+		Label104: "Más que satisfechos con nuestra tienda, porque cada detalle fue comprendido a la perfección.",
+		Label105: "Recomiendo ampliamente a Fifth Dimension por su profesionalismo de principio a fin y su experiencia.",
+		Label106: "Mi experiencia trabajando con Fifth Dimension fue excelente. El resultado final reflejó perfectamente mis expectativas. Estoy agradecida con el estudio por el nivel de detalle, respeto y compromiso demostrado durante cada etapa de la ejecución.",
+		Label107: "Contáctanos",
+		Label108: "Siempre estoy entusiasmada por emprender nuevos proyectos y colaborar con mentes innovadoras. Si tienes",
+		Label109: "un proyecto en mente o simplemente quieres hablar sobre diseño, ¡no dudes en comunicarte!",
+		Label110: "Deja un mensaje",
+		Label111: "Tu nombre",
+		Label112: "Correo electrónico",
+		Label113: "Tu teléfono",
+		Label114: "Asunto",
+		Label115: "Mensaje",
+		Label116: "Enviar Mensaje",
+		Label117: "© 2024 Todos los Derechos Reservados por"
+    }
+};
+
+let currentLang = localStorage.getItem("language") || "en";
+
+function switchLanguage(lang) {
+
+    document.querySelectorAll("[data-key]").forEach(element => {
+
+        const key = element.dataset.key;
+
+        if (translations[lang] && translations[lang][key]) {
+            element.textContent = translations[lang][key];
+        }
+    });
+
+    document.querySelectorAll("[data-placeholder]").forEach(element => {
+
+        const key = element.dataset.placeholder;
+
+        if (translations[lang] && translations[lang][key]) {
+            element.placeholder = translations[lang][key];
+        }
+    });
+
+    document.documentElement.lang = lang;
+
+    const toggle = document.getElementById("langToggle");
+
+    if (toggle) {
+        toggle.textContent = lang === "en" ? "ES" : "EN";
+    }
+
+    localStorage.setItem("language", lang);
+}
+
+document.getElementById("langToggle").addEventListener("click", () => {
+
+    currentLang = currentLang === "en"
+        ? "es"
+        : "en";
+
+    switchLanguage(currentLang);
+});
+
+switchLanguage(currentLang);
+</script>
+	
+	
 
 
 </body></html>
